@@ -1,0 +1,17 @@
+XML::Config - a simple XML Configuration file reader.
+
+Preface:
+
+This is stupendously simple.  Given a well formed configuration file like this:
+
+<Root>
+ <A_variable>A Key</A_variable>
+</Root>
+
+it returns:
+
+{A_variable => 'A Key'}
+
+I whipped this together for internal use is some of our applications, and it does the trick. 
+It will attempt to parse a .bak file in the same directory as the config file you specify if
+there is an error. See the manpage for details.   
